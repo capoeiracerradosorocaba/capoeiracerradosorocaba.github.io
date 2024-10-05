@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 #background-image {
@@ -26,12 +31,44 @@
     background: radial-gradient(circle at center, rgba(102, 102, 102, 0.3) 3%, rgba(13, 13, 13, 0.9) 100%);
 }
 
-
-main{
+main {
     z-index: 1;
 }
 
 main > img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
+}
+
+.navbar {
+    padding: 1rem;
+    margin-top: 1rem;
+    z-index: 1000;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.navbar-nav{
+    margin: 0 auto;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social-icons a {
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
