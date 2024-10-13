@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 #background-image {
     background-image: url("../images/escola_bg.png");
     min-height: 100vh;
@@ -76,6 +80,11 @@ main > img {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.sections{
+    justify-content: center;
+    align-items: center;
+}
+
 .sections h1{
     font-weight: 600;
     padding: 0;
@@ -93,12 +102,13 @@ main > img {
 }
 
 .sections p{
-        line-height: 1.5; /* Ajuste o espaçamento entre linhas */
-        max-height: 4.5em; /* Define a altura máxima para 4 linhas */
-        overflow: hidden; /* Esconde o texto que excede a altura */
-        display: -webkit-box; /* Para limitar a quantidade de linhas */
+        line-height: 1.5; 
+        max-height: 4.5em; 
+        overflow: hidden; 
+        display: -webkit-box;
         -webkit-box-orient: vertical; 
-        -webkit-line-clamp: 4; /* Limita a 4 linhas */   
+        -webkit-line-clamp: 4;
+        max-width: 700px;
 }
 
 .sections a{
@@ -164,7 +174,6 @@ main > img {
 #separator{
     background-image: url("../images/balanca.png");
     min-height: 40vh;
-    width: 100vw;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,6 +204,14 @@ main > img {
     }
 
     .activities{
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+    }
+    
+    #separator{
+        background-attachment: scroll; /* Alterar para scroll em dispositivos móveis */
+        min-height: 30vh; /* Ajuste conforme necessário */
+        background-size: cover; /* Tente manter cover */
     }
 }
