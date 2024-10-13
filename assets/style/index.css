@@ -28,7 +28,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at center, rgba(102, 102, 102, 0.3) 3%, rgba(13, 13, 13, 0.9) 100%);
+    background: radial-gradient(circle at center, rgba(102, 102, 102, 0.3) 3%, rgba(13, 13, 13, 0.5) 100%);
+    min-height: 100vh;
 }
 
 main {
@@ -41,9 +42,11 @@ main > img {
 }
 
 .navbar {
+    top: 0;        
+    z-index: 1000; 
+    margin: 0;     
     padding: 1rem;
-    margin-top: 1rem;
-    z-index: 1000;
+    transition: top 0.3s;
 }
 
 .navbar-brand,
@@ -71,4 +74,48 @@ main > img {
 
 .social-icons a:hover {
     color: rgba(255, 255, 255, 0.7);
+}
+
+.sections h1{
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+hr{
+    height: 20vh;
+    border: none;
+    background-color: #a6a6a6;
+}
+
+.sections img{
+    width: 40vw;
+}
+
+.sections p{
+        line-height: 1.5; /* Ajuste o espaçamento entre linhas */
+        max-height: 4.5em; /* Define a altura máxima para 4 linhas */
+        overflow: hidden; /* Esconde o texto que excede a altura */
+        display: -webkit-box; /* Para limitar a quantidade de linhas */
+        -webkit-box-orient: vertical; 
+        -webkit-line-clamp: 4; /* Limita a 4 linhas */   
+}
+
+@media (max-width: 600px) {
+    .sections {
+        flex-direction: column !important; /* Força a coluna no mobile */
+    }
+
+    .sections .d-flex {
+        flex-direction: column; /* Garante que cada card seja exibido verticalmente */
+        width: 100%; /* Ocupa a largura total da tela */
+    }
+
+    .sections img{
+        width: 100%;
+    }
+    
+    .sections h1{
+        font-size: 2rem;
+    }
 }
