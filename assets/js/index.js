@@ -7,10 +7,10 @@ window.addEventListener('scroll', function () {
 
     if (scrollTop > lastScrollTop) {
         // Scroll Down
-        navbar.style.top = '-100px'; // Esconde a navbar
+        navbar.style.top = '-100px';
     } else {
         // Scroll Up
-        navbar.style.top = '0'; // Mostra a navbar
+        navbar.style.top = '0';
     }
     lastScrollTop = scrollTop;
 });
