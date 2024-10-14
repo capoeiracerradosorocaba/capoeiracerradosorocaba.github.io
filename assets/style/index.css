@@ -185,14 +185,43 @@ main > img {
     margin-top: 5rem;
 }
 
+footer{
+    background-color: #212121;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-logo img {
+    max-height: 15vh;
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: center; 
+}
+
+.footer-social-icons a {
+    margin-left: 15px; 
+    transition: transform 0.3s; 
+}
+
+.footer-social-icons a:hover {
+    transform: scale(1.1);
+}
+
 @media (max-width: 600px) {
     .sections {
-        flex-direction: column !important; /* Força a coluna no mobile */
+        flex-direction: column !important;
     }
 
-    .sections .d-flex {
-        flex-direction: column; /* Garante que cada card seja exibido verticalmente */
-        width: 100%; /* Ocupa a largura total da tela */
+    .sections{
+        flex-direction: column;
+        width: 100%;
     }
 
     .sections img{
@@ -208,10 +237,14 @@ main > img {
         align-items: center;
         flex-direction: column;
     }
+
+    .card{
+        margin-top: 2rem;
+    }
     
     #separator{
-        background-attachment: scroll; /* Alterar para scroll em dispositivos móveis */
-        min-height: 30vh; /* Ajuste conforme necessário */
-        background-size: cover; /* Tente manter cover */
+        background-attachment: scroll;
+        min-height: 30vh;
+        background-size: cover;
     }
 }
