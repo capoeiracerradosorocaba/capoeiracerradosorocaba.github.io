@@ -6,10 +6,13 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 html, body{
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 #background-image {
@@ -185,33 +188,27 @@ main > img {
     margin-top: 5rem;
 }
 
-footer{
+.footer{
     background-color: #212121;
-}
-
-.footer-container {
+    padding: 2rem 0;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
 }
 
-.footer-logo img {
-    max-height: 15vh;
+.footer-logo > img{
+    height: 18vh;
+    max-width: 10vw;
 }
 
-.footer-social-icons {
+.footer-social{
+    text-align: center;
+}
+
+.location{
     display: flex;
-    align-items: center; 
-}
-
-.footer-social-icons a {
-    margin-left: 15px; 
-    transition: transform 0.3s; 
-}
-
-.footer-social-icons a:hover {
-    transform: scale(1.1);
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -247,4 +244,24 @@ footer{
         min-height: 30vh;
         background-size: cover;
     }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer-logo > img{
+        max-width: 50vw;
+        padding: 1rem 0;
+    }
+
+    .footer-social{
+        padding: 1.5rem 0;
+    }
+
+    .foooter-links{
+        padding: 1rem;
+
+    }
+
+
 }
