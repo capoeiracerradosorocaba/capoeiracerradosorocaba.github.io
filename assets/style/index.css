@@ -1,267 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    box-sizing: border-box;
-}
-
-html, body{
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-#background-image {
-    background-image: url("../images/escola_bg.png");
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0d0d0d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#background-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at center, rgba(102, 102, 102, 0.3) 3%, rgba(13, 13, 13, 0.5) 100%);
-    min-height: 100vh;
-}
-
-main {
-    z-index: 1;
-}
-
-main > img {
-    max-width: 100%;
-    height: auto;
-}
-
-.navbar {
-    top: 0;        
-    z-index: 1000; 
-    margin: 0;     
-    padding: 1rem;
-    transition: top 1s;
-}
-
-.navbar-brand,
-.nav-link {
-    color: white !important;
-}
-
-.navbar-nav{
-    margin: 0 auto;
-}
-
-.nav-item{
-    margin: 0 10px;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.social-icons a {
-    font-size: 2rem;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.social-icons a:hover {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.sections{
-    justify-content: center;
-    align-items: center;
-}
-
-.sections h1{
-    font-weight: 600;
-    padding: 0;
-    margin: 0;
-}
-
-.sections hr{
-    height: 1px;
-    border: none;
-    background-color: #a6a6a6;
-}
-
-.sections img{
-    width: 40vw;
-}
-
-.sections p{
-        line-height: 1.5; 
-        max-height: 4.5em; 
-        overflow: hidden; 
-        display: -webkit-box;
-        -webkit-box-orient: vertical; 
-        -webkit-line-clamp: 4;
-        max-width: 700px;
-}
-
-.sections a{
-    margin-top: 10px;
-    padding: 10px;
-    border: #c3b11e 1.75px solid;
-    text-align: center;
-    color: #0d0d0d;
-    font-weight: 450;
-}
-
-.sections a:hover{
-    color: #f8f8f8;
-    background-color: #c3b11e;
-    text-decoration: none;
-    transition: 1s;
-}
-
-.activities h1{
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 20px;
-}
-
-.activities hr{
-    height: 1px;
-    width: 50%;
-    align-self: center;
-    border: none;
-    background-color: #a6a6a6;
-}
-
-.activities p{
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.card{
-    margin: 0;
-    padding: 0;
-    min-height: 30vw;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    border-radius: 10px;
-    position: relative;
-}
-
-.card img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.card p{
-    align-self: center;
-    max-width: 350px;
-    padding: 20px;
-}
-
-#separator{
-    background-image: url("../images/balanca.png");
-    min-height: 40vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0d0d0d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-}
-
-.footer{
-    background-color: #212121;
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer-logo > img{
-    height: 18vh;
-    max-width: 10vw;
-}
-
-.footer-social{
-    text-align: center;
-}
-
-.location{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (max-width: 600px) {
-    .sections {
-        flex-direction: column !important;
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        box-sizing: border-box;
     }
 
-    .sections{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .sections img{
-        width: 100%;
-    }
-    
-    .sections h1{
-        font-size: 2rem;
-    }
-
-    .activities{
+    #background-image {
+        background-image: url("../images/escola_bg.png");
+        min-height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #0d0d0d;
+        display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #background-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at center, rgba(102, 102, 102, 0.3) 3%, rgba(13, 13, 13, 0.5) 100%);
+        min-height: 100vh;
+    }
+
+    #background-image>img {
+        z-index: 1;
+    }
+
+    .information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    .about {
+        display: flex;
         flex-direction: column;
+        padding: 2rem;
     }
 
-    .card{
-        margin-top: 2rem;
-    }
-    
-    #separator{
-        background-attachment: scroll;
-        min-height: 30vh;
-        background-size: cover;
-    }
-
-    .footer{
-        flex-direction: column;
-    }
-
-    .footer-logo > img{
-        max-width: 50vw;
+    .about p {
         padding: 1rem 0;
     }
 
-    .footer-social{
-        padding: 1.5rem 0;
+    .more-info-button {
+        margin-top: 10px;
+        text-align: center;
+        border: #c3b11e 1.75px solid;
+        color: #0d0d0d;
+        padding: 10px;
+        font-weight: 450;
+        text-decoration: none;
+
     }
 
-    .foooter-links{
-        padding: 1rem;
-
+    .more-info-button:hover {
+        background-color: #c3b11e;
+        color: #f8f8f8;
+        transition: .3s;
     }
 
+    .info-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+    }
 
-}
+    .card{
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform .3s ease, box-shadow .3s ease;
+        max-width: 20vw;
+        text-align: center;
+    }
+
+    .card > img{
+        width: 100%;
+    }
+
+    .card > h1{
+        font-weight: 450;
+        padding: .25rem;
+        font-size: 1.5rem;
+    }
+
+    .card > hr{
+        max-width: 50%;
+        margin: .2rem auto;
+    }
+
+    .card > p{
+        padding: 0.75rem 2rem;
+        text-align: left;
+    }
+    @media only screen and (max-width: 600px) {
+        .information {
+            flex-direction: column;
+        }
+
+        .about {
+            width: 110vw;
+        }
+
+        .card{
+            width: 85vw;
+            max-width: 85vw;
+        }
+
+        .info-cards{
+            flex-direction: column;
+            padding: 2rem;
+        }
+    }
