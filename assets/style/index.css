@@ -9,34 +9,34 @@
         box-sizing: border-box;
     }
 
-    body{
+    body {
         margin: 0;
         padding: 0;
     }
 
-    .navbar{
+    .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
     }
 
-    .brand-logo > img{
+    .brand-logo>img {
         width: 25%;
         margin: .5rem 0 0 2rem;
     }
 
-    .navbar-links ul{
+    .navbar-links ul {
         margin: 0;
         padding: 0;
         display: flex;
     }
 
-    .navbar-links li{
+    .navbar-links li {
         list-style: none;
     }
 
-    .navbar-links li a{
+    .navbar-links li a {
         text-decoration: none;
         font-weight: 450;
         padding: 1rem;
@@ -44,11 +44,11 @@
         color: #0d0d0d;
     }
 
-    .navbar-links a:hover{
+    .navbar-links a:hover {
         color: #212121;
     }
 
-    .toggle-button{
+    .toggle-button {
         position: absolute;
         top: 1.5rem;
         right: 1rem;
@@ -60,7 +60,7 @@
         align-items: center;
     }
 
-    .toggle-button .bar{
+    .toggle-button .bar {
         height: 3px;
         width: 100%;
         background-color: #0d0d0d;
@@ -126,7 +126,7 @@
         padding: 4rem;
     }
 
-    .card{
+    .card {
         background-color: #f8f8f8;
         border-radius: 5px;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -136,27 +136,27 @@
         text-align: center;
     }
 
-    .card > img{
+    .card>img {
         width: 100%;
     }
 
-    .card > h1{
+    .card>h1 {
         font-weight: 600;
         padding: .25rem;
         font-size: 1.5rem;
     }
 
-    .card > hr{
+    .card>hr {
         max-width: 50%;
         margin: .2rem auto;
     }
 
-    .card > p{
-        padding: 0.75rem 2rem;
+    .card>p {
+        padding: 0.5rem 2rem 1.25rem;
         text-align: left;
     }
 
-    .cta-contact{
+    .cta-contact {
         background-image: url("../images/fundo-cta-contato.png");
         width: 100%;
         height: 45vh;
@@ -171,7 +171,7 @@
         text-align: center;
     }
 
-    .cta-link{
+    .cta-link {
         background-color: #338045;
         border-radius: 10px;
         padding: 1rem;
@@ -181,30 +181,30 @@
         text-decoration: none;
     }
 
-    .cta-link i{
+    .cta-link i {
         color: #55bb6c;
         font-weight: bold;
     }
 
-    .news{
+    .news {
         display: flex;
         flex-direction: column;
         padding: 2rem;
     }
 
-    .news-posts{
+    .news-posts {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
     }
 
-    .news .bigger{
+    .news .bigger {
         padding: 1rem;
         width: 50%;
     }
 
-    .news .smaller-posts{
+    .news .smaller-posts {
         display: flex;
         flex-direction: column;
         width: 25%;
@@ -214,38 +214,38 @@
 
     @media only screen and (max-width: 600px) {
 
-        .toggle-button{
+        .toggle-button {
             display: flex;
         }
 
-        .navbar-links{
-           display: none;
-           width: 100%;
+        .navbar-links {
+            display: none;
+            width: 100%;
         }
 
-        .navbar{
+        .navbar {
             flex-direction: column;
             align-items: flex-start;
         }
 
-        .brand-logo img{
+        .brand-logo img {
             width: 15%;
         }
-        
-        .navbar-links ul{
+
+        .navbar-links ul {
             flex-direction: column;
             width: 100%;
         }
 
-        .navbar-links li{
+        .navbar-links li {
             text-align: center;
         }
 
-        .navbar-links li a{
+        .navbar-links li a {
             padding: .5rem 1rem;
         }
 
-        .navbar-links.active{
+        .navbar-links.active {
             display: flex;
             transition: 1s;
         }
@@ -258,13 +258,48 @@
             width: 110vw;
         }
 
-        .card{
+        .card {
             width: 85vw;
             max-width: 85vw;
         }
 
-        .info-cards{
+        .info-cards {
             flex-direction: column;
             padding: 2rem;
+        }
+
+        .news {
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .news h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .news-posts {
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+
+        .news .bigger {
+            width: 100%;
+        }
+
+        .news .smaller-posts {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .news .smaller-posts img {
+            width: 100%;
+            padding: 0;
         }
     }
