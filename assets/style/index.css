@@ -9,6 +9,10 @@
         box-sizing: border-box;
     }
 
+    html{
+        scroll-behavior: smooth;
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -297,7 +301,8 @@
         }
 
         .about {
-            width: 110vw;
+            width: 100vw;
+            padding: 1.25rem;
         }
 
         .card {
