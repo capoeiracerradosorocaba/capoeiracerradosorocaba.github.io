@@ -1,0 +1,42 @@
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.title-and-info{
+    margin: 0 1.25rem;
+}
+
+.title-and-info > p{
+    max-width: 600px;
+}
+
+.more-info{
+    width: 50%;
+    margin: 0 auto; 
+    text-align: left;
+    padding: 1.5rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .content > img{
+        width: 95%;
+    }
+
+    .title-and-info{
+        padding: 1.25rem 0;
+    }
+
+    .content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.25rem;
+    }
+
+    .more-info{
+        width: 80vw;
+    }
+
+}
